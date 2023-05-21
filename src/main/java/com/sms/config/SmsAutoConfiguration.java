@@ -3,12 +3,14 @@ package com.sms.config;
 import com.sms.properties.SmsProperties;
 import com.sms.service.impl.AliyunSmsSenderImpl;
 import com.sms.service.impl.TencentSmsSenderImpl;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @EnableConfigurationProperties(value = SmsProperties.class)
-@Configuration
+//@Configuration
+@AutoConfiguration
 public class SmsAutoConfiguration {
 
     /**
